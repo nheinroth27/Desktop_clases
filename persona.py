@@ -2,20 +2,21 @@
 #Despues instanciar un objeto de tipo persona
 
 class Persona:
-    nombre = ""
-    nacionalidad = ""
-    remera = ""
+    nombre = None
+    edad = 27
 
-    def __init__ (self, name, country:
+    def __init__ (self, name, years):
         self.nombre = name
-        self.nacionalidad = country 
-        print ("Soy una persona, me lllamo", self.nombre, "y soy", self.nacionalidad)
+        self.edad = years
+        print ("Soy una persona, me lllamo", self.nombre, "y tengo", self.edad)
     
-    def get_nombre(self):
-        return self.nombre
+    def get_edad (self):
+        return self.edad
+    
+    def set_edad (self, cantidad):
+        self.edad = cantidad
 
-    def set_nombre(self):
-        
+    def cumple (self):
+        self.edad += 1
 
-
-persona1 = Persona ("Lucas", "paraguayo")
+persona1 = Persona ("Jose", 27)        
