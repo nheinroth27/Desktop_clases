@@ -8,7 +8,8 @@ class Persona:
     def __init__ (self, name, years):
         self.nombre = name
         self.edad = years
-        print ("Soy una persona, me lllamo", self.nombre, "y tengo", self.edad)
+        if self.edad > 27
+            print ("Soy una persona, me lllamo", self.nombre, "y tengo", self.edad)
     
     def get_edad (self):
         return self.edad
@@ -18,5 +19,6 @@ class Persona:
 
     def cumple (self):
         self.edad += 1
+        print ("Soy una persona, me lllamo", self.nombre, "y tengo", self.edad)
 
-persona1 = Persona ("Jose", 27)        
+persona1 = Persona("Jose", 27)        
