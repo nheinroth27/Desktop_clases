@@ -29,6 +29,13 @@ d_persona ["hobbie"] = ["cocinar","bordar","cuidar las plantas"]
 
 print(d_persona)
 
-d_persona["edad"] = input("Define tu edad ")
+d_persona["edad"] = int(input("Define tu edad "))
 
-print(d_persona["edad"])
+if d_persona["edad"] != None:
+    print(d_persona["edad"])
+
+print (d_persona["hobbie"][2])
+
+print(d_persona[17])
+
+
